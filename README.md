@@ -106,5 +106,5 @@ Este proyecto está licenciado bajo **Apache License 2.0** – ver el archivo [L
 ---
 
 <p align="center">
-  Hecho con 💜 por <b>Viviana y el equipo HoloQ</b>
+  Hecho con 💜 por <b>Cristian Henriquez y el equipo HoloQ</b>
 </p>
