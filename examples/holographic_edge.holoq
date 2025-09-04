@@ -1,0 +1,23 @@
+// Ejemplo holográfico de borde (holographic_edge.holoq)
+const N = 8;
+
+graph G {
+  nodes: 0..7;
+  edges: (0,1)[0.25], (1,2)[0.5], (2,3)[0.125], (3,4)[0.75],
+         (4,5)[0.33], (5,6)[0.66], (6,7)[0.1], (7,0)[0.9];
+}
+
+reg holo h[N];
+
+isometry IsoBlock(g, h) {
+  // TODO: implementar bloques isométricos
+}
+encode G with ISO(IsoBlock, h);
+
+for e in boundary(G) {
+  H on h[e.u];
+  CP(phi(e)) on h[e.u], h[e.v];
+}
+
+const A = [0,2,4,6];
+measure h[A] -> c[A];
