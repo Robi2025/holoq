@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+venv/
+dist/
+build/
+# OS
+.DS_Store
+Thumbs.db
+# Output
+out_qiskit.py
